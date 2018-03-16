@@ -18,6 +18,7 @@ getSelectionBounds(x0, y0, dx, dy);
 //
 // work with a temporary image based on the selection
 //
+setBatchMode(true); 
 run("Duplicate...", " ");
 rename("selected_area");
 
@@ -151,12 +152,20 @@ for (j=0; j<dy; j++) {
   }
 }
 
+// close the temporary window
+selectWindow("selected_area");
+close();
+setBatchMode(false); 
+
 // reduce to number of entries within the xmin, xmax range
 x_psf_r = Array.slice(x_psf, 0, count2-1);
 y_psf_r = Array.slice(y_psf, 0, count2-1);
 
 // perform fit on psf data points
 initialGuesses = newArray(0, 5, 0, 1);
+if (lengthOf(x_psf_r)==0||lengthOf(y_psf_r)==0) {
+  exit("No rows or columns with edges found.\nMacro aborted.");
+}
 Fit.doFit("Gaussian", x_psf_r, y_psf_r, initialGuesses );
 Fit.plot;
 
@@ -165,10 +174,6 @@ print("Results:");
 print("sigma PSF = ", Fit.p(3));
 // print("rSquared PSF = ", Fit.rSquared);
 print("Nr. of lines used = ", dy - skipped_rows, "of", dy);
-
-// close the temporary window
-selectWindow("selected_area");
-close();
 
 // array for histogram of fit function 
 py = newArray(len);
@@ -193,9 +198,10 @@ ft_hist = Array.fourier(hist_val);
 
 ft_len = lengthOf(ft_fit);
 
+//spatial frequency in Nyquist Frequency
 sf = newArray(ft_len);
 for (i=0; i<ft_len; i++) {
-  sf[i] = i+0.5;
+  sf[i] = 2.*(i+0.5)/ft_len;
   ft_hist[i]=(ft_hist[i]*ft_hist[i]);
   ft_fit[i]=(ft_fit[i]*ft_fit[i]); 
 }
@@ -212,10 +218,11 @@ for (i=0; i<ft_len; i++) {
   ft_hist[i]= ft_hist[i]/tmp;
 }
 
-// todo: remove first data point from plot.
 // todo: update plot titles
 
-Plot.create("Fourier amplitudes: ", "frequency bin", "amplitude (RMS)", sf, ft_hist);
+//Plot.create("Fourier amplitudes: ", "frequency bin", "amplitude (RMS)", sf, ft_hist);
+Plot.create("Fourier amplitudes: ", "Spatial frequency (Nyquist)", "MTF", sf, ft_hist);
+Plot.setLimits(sf[1], 1, -0.1, 1.1);
 Plot.setColor("blue");
 Plot.add("line", sf, ft_fit);
 Plot.setColor("black");
