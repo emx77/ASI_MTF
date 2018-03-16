@@ -1,8 +1,8 @@
 # ASI_MTF
-Imagej macro to calculate the MTF based on a knife edge measurement
+Imagej macro (ASI_MTF.ijm) to calculate the MTF based on a knife edge measurement.
 
 # Installation
-In ImageJ, click on Plugins, Install... to add this macro to the ImageJ plugin menu
+In ImageJ, click on Plugins, Install... and open ASI_MTF.ijm to add this macro to the ImageJ plugin menu.
 
 # Usage
 Open an image file of a knife edge measurement. Select a rectangular area around the edge and the macro will calculate
