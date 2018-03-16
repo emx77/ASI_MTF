@@ -1,6 +1,6 @@
 print("");
 print("ASI_MTF");
-print("version: 1.0.1");
+print("version: 1.0.2");
 print("date: 20180316");
 print("Author: Erik Maddox, Amsterdam Scientific Instruments B.V.");
 print("");
