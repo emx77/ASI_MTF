@@ -1,5 +1,5 @@
 # ASI_MTF
-Imagej macro (ASI_MTF.ijm) to calculate the modulation transfer function (MTF) based on a knife edge measurement.
+Imagej macro (ASI_MTF.ijm) to calculate the modulation transfer function (MTF) based on a knife edge (or slanted edge) measurement.
 
 # Installation
 In ImageJ, click on Plugins, Install... and open ASI_MTF.ijm to add this macro to the ImageJ plugin menu.
