@@ -1,7 +1,7 @@
 print("");
 print("ASI_MTF");
-print("version: 1.0.2");
-print("date: 20180316");
+print("version: 1.0.3");
+print("date: 20201020");
 print("Author: Erik Maddox, Amsterdam Scientific Instruments B.V.");
 print("");
 
@@ -218,14 +218,29 @@ for (i=0; i<ft_len; i++) {
   ft_hist[i]= ft_hist[i]/tmp;
 }
 
+// MTF for ideal pixel detector
+
+ft_a = newArray(ft_len);
+pi = acos(-1);
+for (i=0; i<ft_len; i++) {
+   x = 0.5*pi*sf[i];
+   x = sin(x)/x;
+   ft_a[i]=x;
+}
+
 // todo: update plot titles
 
 //Plot.create("Fourier amplitudes: ", "frequency bin", "amplitude (RMS)", sf, ft_hist);
 Plot.create("Fourier amplitudes: ", "Spatial frequency (Nyquist)", "MTF", sf, ft_hist);
 Plot.setLimits(sf[1], 1, -0.1, 1.1);
-Plot.setColor("blue");
-Plot.add("line", sf, ft_fit);
 Plot.setColor("black");
+Plot.add("line", sf, ft_fit);
+Plot.setColor("red");
+Plot.add("line", sf, ft_a);
+
+Plot.addLegend("hist\nfit\nideal", "Top-Right");
+Plot.setColor("blue");
+
 Plot.show();
 
 print("histogram MTF(0,0.5,1.0):", ft_hist[1], ft_hist[floor(0.25*ft_len)],ft_hist[floor(0.5*ft_len)]);
