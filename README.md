@@ -12,7 +12,7 @@ The edge does not have to be straight, however the macro needs one edge in the r
 
 The MTF will be calculated in two ways. The first one is based on a line spread histogram. The 2nd one is based on a Gaussian fit of the line spread data points for all pixels.
 
-ASI_NNPS.ijm is a macro under development to calculate the NNPS based on a stack of flat field (open beam) images. 
+ASI_NNPS.ijm is a macro under development to calculate the NNPS based on a stack of flat field (open beam) images. It runs in ImageJ 1.51.
 
 # Author
 Erik Maddox (erik.maddoxATamscins.com), Amsterdam Scientific Instruments B.V.
