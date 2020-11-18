@@ -10,7 +10,7 @@ the MTF as a function of pixel spatial frequency. A test image with several edge
 
 The edge does not have to be straight, however the macro needs one edge in the region of interest. The region of interest has to be sufficiently large to have enough data for the calculations.
 
-The MTF will be calculated in two ways. The first one is based on a line spread histogram. The 2nd one is based on a Gaussian fit of the line spread data points for all pixels. Results representing the point spread fucntion (PSF) and edge or line spread function (ESF or LSF) are also available.
+The MTF will be calculated in two ways. The first one is based on a line spread histogram. The 2nd one is based on a Gaussian fit of the line spread data points for all pixels. Results representing the point spread function (PSF) and edge or line spread function (ESF or LSF) are also available.
 
 ASI_NNPS.ijm is a macro under development to calculate the NNPS based on a stack of flat field (open beam) images. It runs in ImageJ 1.51.
 
