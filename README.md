@@ -18,5 +18,5 @@ ASI_NNPS.ijm is a macro under development to calculate the NNPS based on a stack
 Erik Maddox (erik.maddoxATamscins.com), Amsterdam Scientific Instruments B.V.
 
 # Applications
-J. Salido, P. T. Toledano, N. Vallez, O. Deniz, J. Ruiz-Santaquiteria, G. Cristobal, and G. Bueno, "MicroHikari3D: an automated DIY digital microscopy platform with deep learning capabilities," Biomed. Opt. Express 12, 7223-7243 (2021) (https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-12-11-7223&id=46277)
+J. Salido, ea., "MicroHikari3D: an automated DIY digital microscopy platform with deep learning capabilities," Biomed. Opt. Express 12, 7223-7243 (2021) (https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-12-11-7223&id=46277)
   
