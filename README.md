@@ -19,6 +19,7 @@ Erik Maddox (erik.maddoxATamscins.com), Amsterdam Scientific Instruments B.V.
 
 # Applications
 J. Salido, ea., "MicroHikari3D: an automated DIY digital microscopy platform with deep learning capabilities", Biomed. Opt. Express 12, 7223-7243 (2021) (https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-12-11-7223&id=46277)
+
 R. Peng, ea. "Characterizing the resolution and throughput of the Apollo direct electron detector", Journal of Structural Biology: X
 Volume 7, 2023, 100080 (https://www.sciencedirect.com/science/article/pii/S2590152422000216)
   
