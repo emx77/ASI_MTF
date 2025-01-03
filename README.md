@@ -22,4 +22,6 @@ J. Salido, ea., "MicroHikari3D: an automated DIY digital microscopy platform wit
 
 R. Peng, ea. "Characterizing the resolution and throughput of the Apollo direct electron detector", Journal of Structural Biology: X
 Volume 7, 2023, 100080 (https://www.sciencedirect.com/science/article/pii/S2590152422000216)
+
+K. Stanaitis, ea., "Study of the low-cost HIPS and paraffin-based terahertz optical components", Lith. J. Phys. 63 233-240 (2023) (https://doi.org/10.3952/physics.2023.63.4.5)
   
