@@ -26,3 +26,5 @@ Volume 7, 2023, 100080 (https://www.sciencedirect.com/science/article/pii/S25901
 K. Stanaitis, ea., "Study of the low-cost HIPS and paraffin-based terahertz optical components", Lith. J. Phys. 63 233-240 (2023) (https://doi.org/10.3952/physics.2023.63.4.5)
 
 M. Zabic, ea., "Point spread function estimation with computed wavefronts for deconvolution of hyperspectral imaging data", Sci. Rep. 15, 673 (2025) (https://doi.org/10.1038/s41598-024-84790-6)
+
+Jia T, ea., "Correction of motion artifact in CL based on MAFusNet", J. of X-Ray Sci. and Tech., 31(2):393-407. (2023) (https://doi.org/10.3233/XST-221335)
